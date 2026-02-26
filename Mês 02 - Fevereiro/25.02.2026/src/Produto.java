@@ -30,25 +30,21 @@
  * Um produto não pode ser compartilhado entre pedidos.
  * 
  */
-public class Pedido {
-
-	private String nomeCliente;
-	private String emailCliente;
-
+public class Produto {
 	private String nomeProduto;
 	private double precoUnitario;
-	private int quantidade;
 
-	public double calcularTotal() {
-		return precoUnitario * quantidade;
+	public Produto(String nomeProduto, double precoUnitario) {
+		this.nomeProduto = nomeProduto;
+		this.precoUnitario = precoUnitario;
 	}
 
-	public void imprimirResumo() {
-		System.out.println("Cliente: " + nomeCliente);
-		System.out.println("Email: " + emailCliente);
-		System.out.println("Produto: " + nomeProduto);
-		System.out.println("Preço unitário: " + precoUnitario);
-		System.out.println("Quantidade: " + quantidade);
-		System.out.println("Total: " + calcularTotal());
+	public String getNomeProduto() {
+		return nomeProduto;
 	}
+
+	public double getPrecoUnitario() {
+		return precoUnitario;
+	}
+
 }

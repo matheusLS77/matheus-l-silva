@@ -15,14 +15,16 @@
  * 
  * Dificulta manutenção, testes e reutilização do código.
  */
-public class SistemaEscolar {
-
-	private String nomeAluno;
+public class Aluno {
+	private String nome;
 	private double[] notas;
-	private String nomeProfessor;
-	private String disciplina;
 	private String sala;
-	private int cargaHoraria;
+
+	public Aluno(String nome, double[] notas, String sala) {
+		this.nome = nome;
+		this.notas = notas;
+		this.sala = sala;
+	}
 
 	public double calcularMedia() {
 		double soma = 0;
@@ -36,11 +38,28 @@ public class SistemaEscolar {
 		return calcularMedia() >= 7;
 	}
 
-	public void imprimirBoletim() {
-		System.out.println("Aluno: " + nomeAluno);
-		System.out.println("Professor: " + nomeProfessor);
-		System.out.println("Disciplina: " + disciplina);
-		System.out.println("Sala: " + sala);
-		System.out.println("Média: " + calcularMedia());
+	public String getNome() {
+		return nome;
 	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double[] getNotas() {
+		return notas;
+	}
+
+	public void setNotas(double[] notas) {
+		this.notas = notas;
+	}
+
+	public String getSala() {
+		return sala;
+	}
+
+	public void setSala(String sala) {
+		this.sala = sala;
+	}
+
 }

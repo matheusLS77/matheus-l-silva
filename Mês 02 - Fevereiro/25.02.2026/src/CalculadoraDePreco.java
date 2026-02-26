@@ -11,13 +11,11 @@
  */
 public class CalculadoraDePreco {
 
-	public static double calcular(double preco) {
-		double resultado = preco;
-		resultado = resultado + (preco * 0.10);
-		return resultado;
+	public static double calcular(double preco, double imposto) {
+		return preco + (preco * imposto/100);
 	}
 
 	public static void main(String[] args) {
-		System.out.println(calcular(100));
+		System.out.println(calcular(100, 10));
 	}
 }
