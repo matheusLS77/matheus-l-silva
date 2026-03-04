@@ -9,13 +9,18 @@
  * 
  * Método com responsabilidade rígida e pouco extensível.
  */
+
 public class CalculadoraDePreco {
 
-	public static double calcular(double preco, double imposto) {
-		return preco + (preco * imposto/100);
+	public static double calcular(Calculo calculos) {
+		return calculos.calcular(100, 20);
 	}
 
 	public static void main(String[] args) {
-		System.out.println(calcular(100, 10));
+		CalcularImposto ci = new CalcularImposto();
+		CalcularDesconto cd = new CalcularDesconto();
+
+		System.out.println(calcular(cd));
+
 	}
 }
