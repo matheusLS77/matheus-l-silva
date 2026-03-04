@@ -1,3 +1,4 @@
+package ex1;
 
 /**
  * 1)
@@ -20,6 +21,7 @@ public class CalculadoraDePreco {
 		CalcularImposto ci = new CalcularImposto();
 		CalcularDesconto cd = new CalcularDesconto();
 
+		System.out.println(calcular(ci));
 		System.out.println(calcular(cd));
 
 	}

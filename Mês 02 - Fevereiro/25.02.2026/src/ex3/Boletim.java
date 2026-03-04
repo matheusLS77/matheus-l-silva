@@ -1,3 +1,5 @@
+package ex3;
+
 /**
  * 3)
  * 
@@ -18,8 +20,8 @@
 public class Boletim {
 
 	public void imprimirBoletim(Aluno aluno, Professor professor) {
-		System.out.println("Aluno: " + aluno.getNome());
-		System.out.println("Professor: " + professor.getNome());
+		System.out.println("ex3.Aluno: " + aluno.getNome());
+		System.out.println("ex3.Professor: " + professor.getNome());
 		System.out.println("Disciplina: " + professor.getDisciplina());
 		System.out.println("Sala: " + aluno.getSala());
 		System.out.println("Média: " + aluno.calcularMedia());

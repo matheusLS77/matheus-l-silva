@@ -1,9 +1,11 @@
+package ex2;
+
 /**
  * 4)
  * 
  * Múltiplas responsabilidades na mesma classe.
  * 
- * A classe Pedido cuida de:
+ * A classe ex4.Pedido cuida de:
  * 
  * Dados do cliente (nome, email).
  * 
@@ -18,33 +20,32 @@
  * 
  * Os atributos não pertencem todos ao mesmo “conceito”:
  * 
- * Cliente ≠ Produto ≠ Pedido.
+ * ex2.Cliente ≠ ex4.Produto ≠ ex4.Pedido.
  * 
  * Alterações em cliente ou produto impactam diretamente o pedido.
  * 
  * 
- * Não é possível reutilizar Cliente ou Produto em outro contexto.
+ * Não é possível reutilizar ex2.Cliente ou ex4.Produto em outro contexto.
  * 
  * Se um cliente fizer vários pedidos, os dados ficam duplicados.
  * 
  * Um produto não pode ser compartilhado entre pedidos.
  * 
  */
-public class Produto {
-	private String nomeProduto;
-	private double precoUnitario;
+public class Cliente {
+	private String nomeCliente;
+	private String emailCliente;
 
-	public Produto(String nomeProduto, double precoUnitario) {
-		this.nomeProduto = nomeProduto;
-		this.precoUnitario = precoUnitario;
+	public Cliente(String nomeCliente, String emailCliente) {
+		this.nomeCliente = nomeCliente;
+		this.emailCliente = emailCliente;
 	}
 
-	public String getNomeProduto() {
-		return nomeProduto;
+	public String getNomeCliente() {
+		return nomeCliente;
 	}
 
-	public double getPrecoUnitario() {
-		return precoUnitario;
+	public String getEmailCliente() {
+		return emailCliente;
 	}
-
 }

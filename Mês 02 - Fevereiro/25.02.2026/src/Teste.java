@@ -1,13 +1,17 @@
+import ex2.Cliente;
+import ex4.Pedido;
+import ex4.Produto;
+
 public class Teste {
 
     public static void main(String[] args) {
 //        double[] notasPt = {5, 6, 10};
 //        double[] notasMat = {8, 10, 5};
-//        Aluno a = new Aluno("Cleber", notasMat, "2A");
-//        Professor pp = new Professor("Jurandir", "Portugues", "2A", 100);
-//        Professor pm = new Professor("Marcela", "Matematica", "2A", 150);
+//        ex3.Aluno a = new ex3.Aluno("Cleber", notasMat, "2A");
+//        ex3.Professor pp = new ex3.Professor("Jurandir", "Portugues", "2A", 100);
+//        ex3.Professor pm = new ex3.Professor("Marcela", "Matematica", "2A", 150);
 //
-//       Boletim b = new Boletim();
+//       ex3.Boletim b = new ex3.Boletim();
 //
 //       b.imprimirBoletim(a,pm);
 
