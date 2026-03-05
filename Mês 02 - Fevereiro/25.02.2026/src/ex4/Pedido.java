@@ -1,7 +1,5 @@
 package ex4;
 
-import ex2.Cliente;
-
 /**
  * 4)
  * 
@@ -22,12 +20,12 @@ import ex2.Cliente;
  * 
  * Os atributos não pertencem todos ao mesmo “conceito”:
  * 
- * ex2.Cliente ≠ ex4.Produto ≠ ex4.Pedido.
+ * ex4.Cliente ≠ ex4.Produto ≠ ex4.Pedido.
  * 
  * Alterações em cliente ou produto impactam diretamente o pedido.
  * 
  * 
- * Não é possível reutilizar ex2.Cliente ou ex4.Produto em outro contexto.
+ * Não é possível reutilizar ex4.Cliente ou ex4.Produto em outro contexto.
  * 
  * Se um cliente fizer vários pedidos, os dados ficam duplicados.
  * 
@@ -46,7 +44,7 @@ public class Pedido {
 	}
 
 	public void imprimirResumo() {
-		System.out.println("ex2.Cliente: " + cliente.getNomeCliente());
+		System.out.println("ex4.Cliente: " + cliente.getNomeCliente());
 		System.out.println("Email: " + cliente.getEmailCliente());
 		System.out.println("ex4.Produto: " + produto.getNomeProduto());
 		System.out.println("Preço unitário: " + produto.getPrecoUnitario());

@@ -13,16 +13,27 @@ package ex1;
 
 public class CalculadoraDePreco {
 
-	public static double calcular(Calculo calculos) {
-		return calculos.calcular(100, 20);
+	private static final double IMPOSTO = 0.10;
+
+	public static double calcular(double preco) {
+        return preco + (preco * IMPOSTO);
 	}
 
 	public static void main(String[] args) {
-		CalcularImposto ci = new CalcularImposto();
-		CalcularDesconto cd = new CalcularDesconto();
-
-		System.out.println(calcular(ci));
-		System.out.println(calcular(cd));
+		System.out.println(calcular(100));
 
 	}
+
+//	public static double calcular(Calculo calculos) {
+//		return calculos.calcular(100, 20);
+//	}
+//
+//	public static void main(String[] args) {
+//		CalcularImposto ci = new CalcularImposto();
+//		CalcularDesconto cd = new CalcularDesconto();
+//
+//		System.out.println(calcular(ci));
+//		System.out.println(calcular(cd));
+//
+//	}
 }

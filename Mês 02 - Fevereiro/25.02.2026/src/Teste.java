@@ -1,4 +1,4 @@
-import ex2.Cliente;
+import ex4.Cliente;
 import ex4.Pedido;
 import ex4.Produto;
 

@@ -14,19 +14,6 @@ public class ContaBancaria {
 	private String titular;
 	private double saldo;
 
-	public ContaBancaria(String titular, double saldo) {
-		if (saldo < 0) {
-			throw new IllegalArgumentException("Saldo negativo. ");
-		}
-
-		if (titular == null || titular.isBlank()) {
-			throw new IllegalArgumentException("Titular inválido.");
-		}
-
-		this.titular = titular;
-		this.saldo = saldo;
-	}
-
 	public void depositar(double valor) {
 		if (valor <= 0) {
 			throw new IllegalArgumentException("Valor para depósito inválido. ");

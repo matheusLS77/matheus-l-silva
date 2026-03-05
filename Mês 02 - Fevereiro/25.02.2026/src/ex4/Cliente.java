@@ -1,4 +1,4 @@
-package ex2;
+package ex4;
 
 /**
  * 4)
@@ -20,12 +20,12 @@ package ex2;
  * 
  * Os atributos não pertencem todos ao mesmo “conceito”:
  * 
- * ex2.Cliente ≠ ex4.Produto ≠ ex4.Pedido.
+ * ex4.Cliente ≠ ex4.Produto ≠ ex4.Pedido.
  * 
  * Alterações em cliente ou produto impactam diretamente o pedido.
  * 
  * 
- * Não é possível reutilizar ex2.Cliente ou ex4.Produto em outro contexto.
+ * Não é possível reutilizar ex4.Cliente ou ex4.Produto em outro contexto.
  * 
  * Se um cliente fizer vários pedidos, os dados ficam duplicados.
  * 
